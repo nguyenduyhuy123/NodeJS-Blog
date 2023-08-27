@@ -8,7 +8,7 @@ app.use(express.static('public'));
 
 // Template Engine
 app.use(expressLayout);
-app.set('layout', './layouts/main');
+app.set('layout', './layouts/main');  // very special code.
 app.set('view engine', 'ejs');
 
 const PORT = 5000 || process.env.PORT;
